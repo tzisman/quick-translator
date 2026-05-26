@@ -24,7 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
             }, async () => {
                 const res = await translate(text, { to: 'he' });
                 
-                const outputChannel = vscode.window.createOutputChannel("תרגום קופילוט");
+                const outputChannel = vscode.window.createOutputChannel("תרגום");
                 outputChannel.clear();
                 outputChannel.append(res.text); 
                 outputChannel.show(true);       
