@@ -1,8 +1,13 @@
 {
   "name": "quick-translator",
   "displayName": "Quick Translator",
-  "description": "Translates selected text to Hebrew",
+  "description": "A fast VS Code extension to instantly translate selected English code/docs into Hebrew via keyboard shortcut.",
   "version": "0.0.1",
+  "publisher": "tzisman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tzisman/quick-translator.git"
+  },
   "engines": {
     "vscode": "^1.120.0"
   },
@@ -36,15 +41,15 @@
     "test": "vscode-test"
   },
   "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/vscode": "^1.120.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.19.19",
     "@types/node-fetch": "^2.6.13",
-    "@types/vscode": "^1.120.0",
-    "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2",
     "eslint": "^9.39.3",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript-eslint": "^8.56.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
   },
   "dependencies": {
     "@vitalets/google-translate-api": "^9.2.1"
